@@ -1,0 +1,96 @@
+@import "praise2.css" screen and (max-width:790px);
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lemonada:wght@700&family=Libre+Baskerville&family=Lobster&family=Oleo+Script:wght@700&display=swap');
+.material-icons{
+  width: 80px;
+  height: 80px;
+}
+ section .check a{
+  text-decoration: none;
+  color: rgb(9, 8, 31);
+}
+.commonfont {
+  font-family: 'Lemonada', cursive;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Oleo Script', cursive;
+}
+
+header .content {
+  transition: 10s;
+  background: rgb(9, 8, 31) url('img/download (36).png') center;
+  border-bottom-left-radius: 300px;
+  height: 600px;
+  position: relative;
+  margin-top: -50px;
+}
+
+@keyframes animation {
+  0% {
+    left: 50px;
+  }
+}
+
+/* styling the text in the circle */
+header .content .text h1 {
+  font-size: 70px;
+  letter-spacing: 0px;
+  text-shadow: 2px 2px black;
+  color: white;
+  width: 100%;
+  position: absolute;
+  left: 30px;
+  top: 300px;
+  text-align: center;
+  font-family: 'Lemonada', cursive;
+}
+
+
+/* styling the circle itself */
+header .content .circle {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(46, 142, 255, 0.3);
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  border-radius: 50%;
+  transform: rotate3d(20deg, 30deg, 20deg, 200deg);
+}
+
+header .content .circle2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(46, 142, 255, 0.3);
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  border-radius: 50%;
+}
+
+section .check {
+  text-align: center;
+  margin-top: 50px;
+}
+section .check i{
+ font-size: 50px;
+}
+
+
+.animate__bounce,
+.animate__flip {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+
+.animate__lightSpeedInRight {
+  animation-duration: 3s;
+}
+.animate__rubberBand{
+  animation-duration: 1.8s;
+}
